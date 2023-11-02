@@ -1,0 +1,38 @@
+/*.clk{
+    position: absolute;
+    top: 84px;
+    right: 3%;
+    height: 70px;
+    width: 263px;
+    border-radius: 40px;
+    padding-left: 50px;
+    padding-top: 10px;
+    color: white;
+    border: 2px solid blue;
+    background-color: transparent;
+}
+*/
+.clk {
+  position: absolute;
+  top: 84px;
+  right: 3%;
+  height: 70px;
+  width: 263px;
+  border-radius: 40px;
+  padding-left: 50px;
+  padding-top: 10px;
+  color: white;
+  border: 2px solid blue;
+  background-color: transparent;
+}
+
+/* Media query for screens narrower than 768px */
+@media screen and (max-width: 768px) {
+  .clk {
+    width: 90%; /* Make the element almost full width */
+    max-width: 100%; /* Limit the maximum width */
+    right: 5%; /* Adjust the right position as needed */
+    top: 20px; /* Adjust the top position as needed */
+    padding: 10px; /* Adjust padding as needed */
+  }
+}

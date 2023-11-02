@@ -1,0 +1,222 @@
+/*.container{
+   // background:linear-gradient(90deg, #3a506b,#1c2541);
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top:65%;
+    right: 25%;
+   // background: #cbeaa6;
+   // background: #d496a7;
+
+}
+.box{
+    backdrop-filter:blur(100px);
+    background-color: rgba(220, 230, 255, .07);
+    width: 700px;
+    position: absolute;
+    top: 33%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 40px;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   color: white;
+   padding: 40px;
+   border: 1px solid blue;
+
+}
+
+.box h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: none;
+    color: #e2cdf6;
+}
+.box h1::after{
+    content: '';
+    width: 300px;
+    background-color: white;
+    height: 4px;
+    position: absolute;
+    top :25%;
+}
+.box blockquote{
+   font-size: 26px;
+   min-height: 110px;
+   margin-top: 30px;
+   text-align: center;
+   text-wrap: wrap;
+}
+.box blockquote::before, .box blockquote::after{
+    content: '"';
+}
+.box span{
+    display: block;
+    margin: 10px;
+    float: right;
+    position: relative;
+}
+.box span::before{
+    content: '';
+    width: 20px;
+    background-color:white ;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    left: -35%;
+}
+.box div{
+    width: 100%;
+    margin-top: 50px ;
+    display: flex;
+    justify-content: center;
+}
+.box button{
+    width:100px;
+    height: 40px;
+    border-radius: 20px;
+    margin-left: 20px;
+    border: none;
+    text-align: center;
+    justify-content: center;
+    font-weight: 700;
+    background-color: #e2cdf6;
+
+}
+.box button:hover{
+    box-shadow: 10px 10px 40px rgb(25, 25, 102);
+    cursor: pointer;
+}
+img{
+    width: 30%;
+    height: 30px;
+}
+button.tweet{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}*/
+.container {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 65%;
+  right: 25%;
+}
+
+.box {
+  backdrop-filter: blur(100px);
+  background-color: rgba(220, 230, 255, 0.07);
+  width: 700px;
+  position: absolute;
+  top: 33%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 40px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 40px;
+  border: 1px solid blue;
+}
+
+.box h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  filter: none;
+  color: #e2cdf6;
+}
+
+.box h1::after {
+  content: '';
+  width: 300px;
+  background-color: white;
+  height: 4px;
+  position: absolute;
+  top: 25%;
+}
+
+.box blockquote {
+  font-size: 26px;
+  min-height: 110px;
+  margin-top: 30px;
+  text-align: center;
+  white-space: normal; /* Use 'white-space' instead of 'text-wrap' */
+}
+
+.box blockquote::before,
+.box blockquote::after {
+  content: '"';
+}
+
+.box span {
+  display: block;
+  margin: 10px;
+  float: right;
+  position: relative;
+}
+
+.box span::before {
+  content: '';
+  width: 20px;
+  background-color: white;
+  height: 2px;
+  position: absolute;
+  top: 50%;
+  left: -35%;
+}
+
+.box div {
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.box button {
+  width: 100px;
+  height: 40px;
+  border-radius: 20px;
+  margin-left: 20px;
+  border: none;
+  text-align: center;
+  justify-content: center;
+  font-weight: 700;
+  background-color: #e2cdf6;
+}
+
+.box button:hover {
+  box-shadow: 10px 10px 40px rgb(25, 25, 102);
+  cursor: pointer;
+}
+
+img {
+  width: 30%;
+  height: 30px;
+}
+
+button.tweet {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* Media query for screens narrower than 768px */
+@media screen and (max-width: 768px) {
+  .container {
+    top: 75%; /* Adjust the top position as needed */
+  }
+
+  .box {
+    width: 90%; /* Make the box almost full width */
+    max-width: 100%; /* Limit the maximum width */
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

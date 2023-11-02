@@ -1,0 +1,97 @@
+.Todo{
+    width: 100%;
+    max-width: 540px;
+    backdrop-filter:blur(100px);
+    background-color: rgba(220, 230, 255, .07);
+    margin: 10px auto 20px;
+    padding: 30px 40px 70px;
+    border-radius: 30px ;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid blue;
+}
+.headbox{
+    width: 100%;
+    max-width: 540px;
+    height: 90px;
+    border-radius: 30px ;
+    margin: 90px auto 20px;
+    padding: 2px 40px 70px;
+    backdrop-filter:blur(100px);
+    background-color: rgba(220, 230, 255, .07);
+    color: #e2cdf6;
+}
+.headbox h3{
+    margin-top: 5px;
+    color: white;
+}
+.headbox h4{
+    color: white;
+}
+.input{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;   
+}
+
+.inputadd{
+    flex: 1;
+    border: none;
+    border-bottom: 2px solid silver;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    cursor: text;
+    font-size: larger;
+    font-weight: bold;
+    color: white;
+}
+.Addbutton{
+    padding-top: 10px;
+    padding-bottom:10px;
+    width: 80px;
+    outline: none;
+    background-color:transparent;
+    font-size: larger;
+    font-weight: bold;
+    cursor: pointer;
+    border: 2px solid silver;
+    border-radius: 20px;
+    color: rgb(77, 77, 189);
+}
+.Addbutton:hover{
+    background-color: #e2cdf6;
+}
+
+.Todo h3{
+    margin-top: 10px;
+    color: white;
+}
+.Todolist{
+    display: flex;
+    font-size: 17px;
+    padding: 15px 10px 10px; 
+    user-select: none;
+    color:#e2cdf6;
+    display: flex;
+    justify-content: space-between;
+    max-height: 65px;
+    border-bottom: 2px solid white;
+}
+
+.Todolist input{
+    cursor: pointer;
+}
+
+.Todolist h3{
+    margin: 0;
+    margin-right: auto;
+    padding-left: 10px;
+}
+.Todolist img{
+    max-width: 30px;
+    padding-right: 10px;
+    cursor: pointer;
+}

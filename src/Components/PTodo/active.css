@@ -1,0 +1,116 @@
+/*.Taskbox{
+    width:640px;
+    height:auto;
+    position: absolute;
+    top:145%;
+    left: 52%;
+    border-radius: 15px;
+    min-height: 380px;
+    backdrop-filter:blur(100px);
+    background-color: rgba(220, 230, 255, .07);
+    display: flex;
+    color: white;
+    gap: 10px;
+    padding: 10px;
+}
+.completedtask{
+    width: 100%;
+    padding: 20px;
+}
+.Taskbox span{
+    width: 1px;
+    background-color: blue;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    left: 60px;
+}
+.Taskbox h3{
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid blue;
+    height: 35px;
+    color: #e2cdf6;
+}
+
+.completedtasklist{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    left: 50px;
+    max-width:486px; 
+}
+.completedtasklist img{
+    max-width: 30px;
+    padding-right: 10px;
+    cursor: pointer;  
+}*/
+
+.Taskbox {
+  width: 640px;
+  height: auto;
+  position: absolute;
+  top: 145%;
+  left: 52%;
+  border-radius: 15px;
+  min-height: 380px;
+  backdrop-filter: blur(100px);
+  background-color: rgba(220, 230, 255, 0.07);
+  display: flex;
+  color: white;
+  gap: 10px;
+  padding: 10px;
+}
+
+.completedtask {
+  width: 100%;
+  padding: 20px;
+}
+
+.Taskbox span {
+  width: 1px;
+  background-color: blue;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  position: relative;
+  left: 60px;
+}
+
+.Taskbox h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  border-bottom: 1px solid blue;
+  height: 35px;
+  color: #e2cdf6;
+}
+
+.completedtasklist {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */
+  justify-content: space-between;
+  position: relative;
+  left: 50px;
+  max-width: 486px;
+}
+
+.completedtasklist img {
+  max-width: 30px;
+  padding-right: 10px;
+  cursor: pointer;
+}
+
+/* Media query for screens narrower than 768px */
+@media screen and (max-width: 768px) {
+  .Taskbox {
+    width: 100%; /* Make the container full width */
+    max-width: 640px; /* Limit the maximum width */
+    left: 0; /* Reset the left positioning */
+    border-radius: 10px; /* Optionally reduce border-radius */
+    top: 165%; /* Adjust the top position as needed */
+  }
+
+  .completedtasklist {
+    left: 0; /* Reset left positioning */
+    max-width: 100%; /* Make the items full width */
+  }
+}
